@@ -8,8 +8,8 @@ public class KeychainsForSale {
 		Scanner input = new Scanner(System.in);
 		String userChoice;
 		boolean menuLoop = true;
-		//Keychain shop menu
 		
+		//Keychain Shop Menu
 		System.out.println("Welcome to the Keychain Shop");
 		
 		do {
