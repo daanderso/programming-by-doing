@@ -8,7 +8,7 @@ public class ParallelArrays {
 
 		Scanner input = new Scanner(System.in);
 
-		boolean registeredStudent = true;
+		boolean registeredStudent = false;
 
 		String[] lastnames = { "Anderson", "Martin", "Williams", "Scott", "Bowles" };
 		double[] gpa = { 99.9, 89.5, 79.6, 69.9, 85.5 };
@@ -28,14 +28,14 @@ public class ParallelArrays {
 		for (int i = 0; i < arraySize; i++) {
 
 			if (studentId == id[i]) {
+				registeredStudent = true;
 				System.out.println("");
 				System.out.println("Found in slot " + i);
 				System.out.println("\t" + "Name: " + lastnames[i]);
 				System.out.println("\t" + "Average: " + gpa[i]);
 				System.out.println("\t" + "ID: " + id[i]);
-			} else {
-				registeredStudent = false;
 			}
+
 		}
 		
 		if (registeredStudent == false){
